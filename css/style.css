@@ -1,0 +1,275 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(97, 252, 252);
+    font-family: 'Baloo Bhaina 2', cursive;
+} 
+*{
+    padding: 0px;
+    margin: 0px;  
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+}
+
+#logo{
+    margin: 6px 23px;
+}
+#logo img{
+    margin: 12px 9px;
+    height: 70px;
+    width: 70px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    padding: 0px;
+    margin: 0px;  
+    content: "";
+    background: rgb(83, 80, 80);
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 4px 5px;
+    text-decoration: none;
+    margin: 0px 9px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background: red;
+    border-radius: 7px;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    /* height: 415px; */
+    height: 295px;
+    /* padding: 8px 300px; */
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    top: 0%;
+    left: 0%;
+    padding: 0px;
+    margin: 0px;  
+    content: "";
+    background: url(../img/bg.jpg) ;
+    background-size: 100%;
+    position: absolute;
+    height: 415px; 
+    width: 100%;
+    z-index: -1;
+    opacity: 1.5;
+}
+#home p{
+    font-size:1rem;
+    text-align: center;
+    color: white;
+}
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.5rem;
+    color: white;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    color: white;
+}
+.btn{
+    padding: 5px 5px;
+    margin: 15px;
+    border: 2px solid white;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: white;
+    background-color: brown;
+    cursor: pointer;
+}
+.centre{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    /* font-size: 50px; */
+}
+#services{
+    margin: 20px 27px;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+#services .box-1{
+    font-family: 'Bree Serif', serif;
+    border: 2px solid brown;
+    color: chocolate;
+    padding: 30px;
+    margin: 3px 6px;
+    border-radius: 10px;
+    background: chartreuse;
+}
+#services .box-2{
+    font-family: 'Bree Serif', serif;
+    border: 2px solid brown;
+    color: chocolate;
+    padding: 30px;
+    margin: 3px 6px;
+    border-radius: 10px;
+    background: chartreuse;
+}
+#services .box-3{
+    font-family: 'Bree Serif', serif;
+    border: 2px solid brown;
+    color: chocolate;
+    padding: 30px;
+    margin: 3px 6px;
+    border-radius: 10px;
+    background: chartreuse;
+}
+#services .box-1 img{
+    
+    height: 180px;
+    display: block;
+    margin: auto;
+}
+#services .box-2 img{
+    
+    height: 180px;
+    display: block;
+    margin: auto;
+}
+#services .box-3 img{
+    
+    height: 180px;
+    display: block;
+    margin: auto;
+}
+/* #services .box-1 h2{
+    color: black;
+}
+#services .box-2 h2{
+    color: black;
+}
+#services .box-3 h2{
+    color: black;
+} */
+
+/* .box-1{
+    font-size: 30px;
+    background-color: coral;
+}
+.box-2{
+    height: 100%;
+    width: 100%;
+    background-color: darkcyan;
+} */
+.h1-primary.centre{
+    font-size: 3rem;
+}
+#client-section{
+    height: 62vh;
+    width: 100vw;
+    background-image: url(../img/bg3.jpg);
+    background-image: 100%;
+    /* background: url(../img/bg3.jpg); */
+    background-position: centre;
+    /* background-position:center center ; */ 
+    
+}
+
+/* #client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/bg.jpg');
+    width: 100%;
+    height: 100;
+    z-index: -1;
+    opacity: 0.3;
+} */
+#clients{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    padding: 70px;
+}
+.client-item{
+    padding: 18px;
+}
+#clients img{
+    height: 110px;
+}
+.h-primary.centre{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.5rem;
+    font-display: bold;
+    font: border;
+    color: rgb(241, 233, 233);
+    text-shadow: rgb(32, 32, 32) ;
+}
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background : url('../img/contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    padding-top: 32px;
+}
+
+#contact-box input,#contact-box textarea{
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+}
+#contact-box textarea{
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+.h2-primary.centre{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.5rem;
+    font-display: bold;
+    color: black;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 0px 20px;
+}
